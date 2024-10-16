@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>من نحن والمنتجات</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+
+        /* تنسيق قسم "من نحن" */
+        .about-us {
+            display: none; /* إخفاء القسم بشكل افتراضي */
+            margin-top: 20px;
+            border: 1px solid #ddd;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border-radius: 10px;
+        }
+
+        .about-us.visible {
+            display: block; /* إظهار القسم عند النقر على الزر */
+        }
+
+        /* تنسيق الزر */
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        /* تنسيق قسم المنتجات */
+        .products {
+            margin-top: 40px;
+        }
+
+        .product {
+            border: 1px solid #ddd;
+            padding: 10px;
+            margin-bottom: 10px;
+            background-color: #f1f1f1;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+
+
+    <div class="about-us" id="aboutUsSection">
+        <h2>من نحن</h2>
+        <p>
+             <strong>[SM store]</strong>، وجهتكم الموثوقة لتقديم جميع خدمات مواقع التواصل الاجتماعي! مرحبًا بكم في
+        </p>
+        <p>
+            نحن فريق متخصص في تعزيز وجودكم الرقمي ومساعدتكم على الوصول إلى جمهور أوسع على مختلف منصات التواصل الاجتماعي. سواء كنت تبحث عن زيادة المتابعين، تعزيز التفاعل، أو إدارة حملات إعلانية فعّالة، نحن هنا لتقديم الحلول المناسبة التي تلبي احتياجاتك.
+        </p>
+        <p>
+            في <strong>[SM store]</strong>، نفهم أهمية بناء حضور قوي وفعّال على الإنترنت في عصر السرعة الرقمية، لذلك نقدم مجموعة متكاملة من الخدمات المصممة خصيصًا لتحسين تواجدك على المنصات الشهيرة مثل <strong>إنستغرام، فيسبوك، تويتر، تيك توك، يوتيوب</strong> وغيرها الكثير.
+        </p>
+        <p>
+            انضم إلينا اليوم ودعنا نساعدك في الارتقاء بحضورك على وسائل التواصل الاجتماعي إلى مستوى جديد!
+        </p>
+
+        <!-- زر العودة إلى قسم المنتجات -->
+        <a href="index.html" class="buy-btn" >   <h1>لعودة إلى المنتجات</h1>   </a>
+    </div>
+
+    <script>
+        // إظهار وإخفاء قسم "من نحن"
+         {
+            var aboutSection = document.getElementById("aboutUsSection");
+            if (aboutSection.classList.contains("visible")) {
+                aboutSection.classList.remove("visible");
+            } else {
+                aboutSection.classList.add("visible");
+            }
+        };
+
+        // التمرير إلى قسم المنتجات
+        function scrollToProducts() {
+            var productsSection = document.getElementById("productsSection");
+            productsSection.scrollIntoView({ behavior: "smooth" });
+        }
+    </script>
+
+</body>
+</html>
